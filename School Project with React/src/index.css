@@ -1,0 +1,450 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Navigation */
+.navigation{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5E492E;
+  color: white;
+}
+
+.navigation h2{
+  font-size: 45px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.navigation ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation li{
+  display: flex;
+  padding: 5px 20px;
+  font-size: 20px;
+  border-right: 2px solid white;
+}
+
+.navigation a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navigation a:hover{
+  color: #a35f06;
+}
+
+/* Footer */
+.footer{
+  background-color: #5E492E;
+}
+
+.footer h2{
+  color: white;
+  font-size: 25px;
+}
+
+.footer nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.footer nav li{
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.footer nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+/* Information System */
+
+.information-system{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #DCC7AB;
+  color: white;
+}
+
+.information-system img{
+  height: 300px;
+  width: 500px;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-right: 40px;
+  border: 7px solid silver;
+  outline: 3px solid black;
+}
+
+.information-system h2{
+  font-size: 40px;
+  margin: 0;
+}
+
+.information-system p{
+  font-size: 27px;
+  width: 650px;
+}
+
+/* Welcome To School */
+.welcome-to-school {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Management System */
+.management-system{
+  width: 700px;
+}
+
+.management-system h3{
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-family: cursive;;
+}
+
+.management-system p {
+  margin-bottom: 30px;
+  color: #6d6e70c7;
+  font-weight: bold;
+}
+
+/* Latest School News */
+.latest-school-news{
+  width: 500px;
+  margin-left: 200px;
+}
+
+.latest-school-news img{
+  height: 90px;
+  width: 90px;
+  border: 3px solid white;
+  outline: 1px solid #DFE0DF;
+  margin-right: 20px;
+}
+
+.latest-school-news h3{
+  margin-bottom: 0;
+  padding: 30px;
+  border: 1px solid #DFE0DF;
+  background-color: #5E492E;
+  color: white;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.latest-school-news-div, .latest-teacher-news-div, .latest-result-news-div{
+  display: flex;
+  padding: 35px;
+  border: 1px solid #DFE0DF;
+  background-color: #EFF0EF;
+}
+
+.latest-school-news-div p, .latest-teacher-news-div p, .latest-result-news-div p{
+  margin-top: 5px;
+  font-size: 14px;
+  color: #6d6e70c7;
+}
+
+.latest-teacher-news-div{
+  background-color: #DFE0DF;
+}
+
+.latest-school-news-div h4, .latest-teacher-news-div h4, .latest-result-news-div h4{
+  color: #6d6e70c7;
+  margin-bottom: 5px;
+}
+
+.latest-school-news-div span, .latest-teacher-news-div span, .latest-result-news-div span{
+  font-weight: bolder;
+}
+
+/* About */
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about hr{
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:gray;
+  margin-bottom: 15px;
+}
+
+.about-main h2{
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-family: cursive;;
+}
+
+.about-main p{
+  margin-bottom: 30px;
+  color: #6d6e70c7;
+  font-weight: bold;
+  width: 700px;
+}
+
+.about img{
+  height: 200px;
+  width: 400px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: 7px solid silver;
+  outline: 3px solid black;
+}
+
+/* Gallery */
+.gallery h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.gallery img{
+  height: 300px;
+  width: 500px;
+  margin: 100px 50px 100px 70px;
+  border: 5px solid white;
+  outline: 2px solid black;
+}
+
+/* Register */
+.register{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  width: 500px;
+  font-size: 15px;
+}
+
+.container input{
+  font-size: 15px;
+  margin-bottom: 15px;
+  height: 30px;
+}
+
+.register button{
+  color: white;
+  background-color: #5E492E;
+  width: 30%;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+
+.register-span{
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Login */
+.login{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  width: 500px;
+  font-size: 15px;
+}
+
+.container input{
+  font-size: 15px;
+  margin-bottom: 15px;
+  height: 30px;
+}
+
+.login .loginbtn{
+  color: white;
+  background-color: #5E492E;
+  width: 30%;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.login .registerbtn{
+  color: white;
+  background-color: #5E492E;
+  width: 40%;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.login .loginbtn:hover ,.login .registerbtn:hover{
+  background-color: #a35f06;
+}
+
+.register-span{
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.signin{
+  font-weight: bold;
+}
+
+.signin a{
+  text-decoration: none;
+  color: #a35f06;
+}
+
+/* Contact Us */
+.contact{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  width: 500px;
+  font-size: 15px;
+}
+
+.container input{
+  font-size: 15px;
+  margin-bottom: 15px;
+  height: 30px;
+}
+
+.text-area{
+  font-weight: bold;
+}
+
+.contact .sendemail{
+  color: white;
+  background-color: #5E492E;
+  width: 40%;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+
+.contact .sendemail:hover{
+  background-color: #a35f06;
+}
+
+.contact-span{
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Forgotten Password */
+.forgottenpsw{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  width: 500px;
+  font-size: 15px;
+}
+
+.container input{
+  font-size: 15px;
+  margin-bottom: 15px;
+  height: 30px;
+}
+
+.forgottenpsw .reset-password{
+  color: white;
+  background-color: #5E492E;
+  width: 40%;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.forgottenpsw .reset-password:hover{
+  background-color: #a35f06;
+}
+
+.register-span{
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.signin{
+  font-weight: bold;
+}
+
+.signin a{
+  text-decoration: none;
+  color: #a35f06;
+}
+
+
+
+
+

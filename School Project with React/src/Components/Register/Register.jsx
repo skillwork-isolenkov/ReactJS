@@ -1,4 +1,12 @@
+import { useState } from 'react';
+
 const Register = () => {
+    const [message, setMessage] = useState('');
+
+    const registerButton = () => {
+        setMessage('Your account has been registered successfully. We will contact you soon for further process!')
+    }
+
     return (
         <div className="register">
             <h2>User Registration Page</h2>
@@ -22,10 +30,10 @@ const Register = () => {
                 <label for="psw-repeat"><b>Repeat Password</b></label>
                 <input type="password" name="psw-repeat" id="psw-repeat" required />
 
-                <button type="submit" className="registerbtn">Register</button>
+                <button onClick={registerButton} type="submit" className="registerbtn">Register</button>
             </div>
 
-            <span className="register-span"></span>
+            <span className="register-span">{message}</span>
 
             <div className="container signin">
                 <p>Already have an account? <a className="sign-in" href="/login">Sign in</a>.</p>

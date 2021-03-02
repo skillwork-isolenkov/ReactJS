@@ -1,4 +1,13 @@
+import { useState } from 'react';
+const { Link } = require("react-router-dom");
+
 const Login = () => {
+    const [message, setMessage] = useState('');
+
+    const loginButton = () => {
+        setMessage('Your have Login Successfully!')
+    }
+
     return (
         <div className="login">
             <h2>Login Page</h2>
@@ -10,12 +19,12 @@ const Login = () => {
                 <input type="password" name="psw" id="psw" required />
 
                 <div className="buttons">
-                    <button type="submit" className="loginbtn">Login</button>
-                    <button type="submit" className="registerbtn">Register New User</button>
+                    <Link to="/login" onClick={loginButton} className="loginbtn">Login</Link>
+                    <Link to="/register" className="registerbtn">Register New User</Link>
                 </div>
             </div>
 
-            <span className="register-span"></span>
+            <span className="register-span">{message}</span>
 
             <div className="container signin">
                 <p>Forgot Password? <a className="forgotten-pass" href="/forgottenpsw">Click Here</a>.</p>

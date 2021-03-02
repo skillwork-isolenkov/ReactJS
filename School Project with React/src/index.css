@@ -300,16 +300,21 @@ code {
   height: 30px;
 }
 
+#psw{
+  margin-bottom: 30px;
+}
+
 .login .loginbtn{
   color: white;
   background-color: #5E492E;
   width: 30%;
-  padding: 15px;
+  padding: 15px 40px;
   font-size: 17px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 7px;
-  margin-bottom: 10px;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 .login .registerbtn{
@@ -321,6 +326,7 @@ code {
   font-weight: bold;
   cursor: pointer;
   border-radius: 7px;
+  text-decoration: none;
 }
 
 .login .loginbtn:hover ,.login .registerbtn:hover{
@@ -336,6 +342,7 @@ code {
 
 .signin{
   font-weight: bold;
+  margin-bottom: 26px;
 }
 
 .signin a{

@@ -6,11 +6,21 @@ const ForgottenPassword = () => {
     const forgottenPswButton = () => {
         let container = document.querySelector('.container');
         let loginParagraph = document.querySelector('.loginParagraph');
+        let forgottenSpan = document.querySelector('.forgotten-span');
 
-        container.style.display = 'none'
-        loginParagraph.style.marginBottom = '35%';
+        let username = document.querySelector('#username');
+        let email = document.querySelector('#email');
 
-        setMessage('Your password has been reset!')
+        if (username.value !== '' && email.value !== '') {
+            container.style.display = 'none'
+            loginParagraph.style.marginBottom = '35%';
+            forgottenSpan.style.color = 'green';
+
+            setMessage('Your password has been reset!')
+        } else {
+            forgottenSpan.style.color = '#cf1717';
+            setMessage('Please provide your username and your e-mail!')
+        }
     }
 
 

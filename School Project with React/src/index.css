@@ -275,7 +275,6 @@ code {
 }
 
 .register-span{
-  color: green;
   font-weight: bold;
   font-size: 20px;
   margin-top: 10px;
@@ -440,7 +439,6 @@ code {
 }
 
 .forgotten-span{
-  color: green;
   font-weight: bold;
   font-size: 20px;
 }

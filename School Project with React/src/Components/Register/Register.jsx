@@ -6,6 +6,7 @@ const Register = () => {
     const registerButton = () => {
         let container = document.querySelector('.container');
         let registerParagraph = document.querySelector('.register-paragraph');
+        let registerSpan = document.querySelector('.register-span');
 
         let name = document.querySelector('#name');
         let email = document.querySelector('#email');
@@ -17,8 +18,12 @@ const Register = () => {
         if (name.value !== '' && email.value !== '' && mobile.value !== '' && username.value !== '' && psw.value !== '' && pswRepeat.value !== '') {
             container.style.display = 'none'
             registerParagraph.style.marginBottom = '33%';
+            registerSpan.style.color = 'green';
 
             setMessage('Your account has been registered successfully. We will contact you soon for further process!');
+        } else {
+            registerSpan.style.color = '#cf1717';
+            setMessage('Please fill out the fields!');
         }
     }
 

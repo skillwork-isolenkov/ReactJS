@@ -15,7 +15,7 @@ const Login = () => {
     return (
         <div className="login">
             <h2>Login Page</h2>
-            <div className="container" style={{ display: "flex" }}>
+            <div className="container">
                 <label for="username"><b>Username:</b></label>
                 <input type="text" name="username" id="username" required />
 

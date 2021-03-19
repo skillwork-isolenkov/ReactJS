@@ -5,10 +5,22 @@ const Contact = () => {
 
     const sendMessage = () => {
         let container = document.querySelector('.container');
-        container.style.display = 'none'
         let contactSpan = document.querySelector('.contact-span');
-        contactSpan.style.marginBottom = '12%';
-        setMessage('We got your message. We will contact you shortly!')
+
+        let name = document.querySelector('#name');
+        let email = document.querySelector('#email');
+        let textarea = document.querySelector('.textarea');
+
+        if (name.value !== '' && email.value !== '' && textarea.value !== '') {
+            container.style.display = 'none'
+            contactSpan.style.marginBottom = '12%';
+            contactSpan.style.color = "green";
+
+            setMessage('We got your message. We will contact you shortly!');
+        } else {
+            contactSpan.style.color = "#cf1717";
+            setMessage('Please provide your name, e-mail and your message!');
+        }
     }
 
     return (

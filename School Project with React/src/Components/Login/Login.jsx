@@ -6,10 +6,24 @@ const Login = () => {
 
     const loginButton = () => {
         let container = document.querySelector('.container');
-        container.style.display = 'none'
         let forgotPsw = document.querySelector('.forgot-psw');
-        forgotPsw.style.marginBottom = '33%';
-        setMessage('Your have Login Successfully!');
+        let loginSpan = document.querySelector('.login-span');
+
+        let username = document.querySelector('#username');
+        let psw = document.querySelector('#psw');
+
+        if (username.value !== '' && psw.value !== '') {
+            container.style.display = 'none'
+            forgotPsw.style.marginBottom = '33%';
+
+            loginSpan.style.color = 'green';
+            setMessage('Your have Login Successfully!');
+        }
+        else {
+            loginSpan.style.color = '#cf1717';
+            loginSpan.style.marginTop = '30px';
+            setMessage('Please provide your username and your password!');
+        }
     }
 
     return (

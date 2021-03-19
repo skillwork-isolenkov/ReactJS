@@ -5,9 +5,11 @@ const ForgottenPassword = () => {
 
     const forgottenPswButton = () => {
         let container = document.querySelector('.container');
-        container.style.display = 'none'
         let loginParagraph = document.querySelector('.loginParagraph');
+
+        container.style.display = 'none'
         loginParagraph.style.marginBottom = '35%';
+
         setMessage('Your password has been reset!')
     }
 

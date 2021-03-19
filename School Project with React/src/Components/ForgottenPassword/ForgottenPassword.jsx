@@ -4,6 +4,10 @@ const ForgottenPassword = () => {
     const [message, setMessage] = useState('');
 
     const forgottenPswButton = () => {
+        let container = document.querySelector('.container');
+        container.style.display = 'none'
+        let loginParagraph = document.querySelector('.loginParagraph');
+        loginParagraph.style.marginBottom = '35%';
         setMessage('Your password has been reset!')
     }
 
@@ -23,10 +27,10 @@ const ForgottenPassword = () => {
                 </div>
             </div>
 
-            <span className="register-span">{message}</span>
+            <span className="forgotten-span">{message}</span>
 
             <div className="container signin">
-                <p>For Login? <a className="login-button" href="/login">Click Here</a>.</p>
+                <p className="loginParagraph">For Login? <a className="login-button" href="/login">Click Here</a>.</p>
             </div>
         </div>
     );

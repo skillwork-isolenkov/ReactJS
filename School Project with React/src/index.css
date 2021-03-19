@@ -244,6 +244,7 @@ code {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  text-align: center;
   margin-top: 5%;
 }
 
@@ -270,6 +271,7 @@ code {
   cursor: pointer;
   border-radius: 7px;
   margin-bottom: 15px;
+  margin-left: 170px;
 }
 
 .register-span{
@@ -284,6 +286,7 @@ code {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  text-align: center;
   margin-top: 5%;
 }
 
@@ -333,7 +336,7 @@ code {
   background-color: #a35f06;
 }
 
-.register-span{
+.login-span{
   color: green;
   font-weight: bold;
   font-size: 20px;
@@ -355,6 +358,7 @@ code {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  text-align: center;
   margin-top: 5%;
 }
 
@@ -385,6 +389,7 @@ code {
   cursor: pointer;
   border-radius: 7px;
   margin-top: 20px;
+  margin-left: 145px;
 }
 
 .contact .sendemail:hover{
@@ -403,6 +408,7 @@ code {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  text-align: center;
   margin-top: 5%;
 }
 
@@ -435,11 +441,10 @@ code {
   background-color: #a35f06;
 }
 
-.register-span{
+.forgotten-span{
   color: green;
   font-weight: bold;
   font-size: 20px;
-  margin-top: 10px;
 }
 
 .signin{

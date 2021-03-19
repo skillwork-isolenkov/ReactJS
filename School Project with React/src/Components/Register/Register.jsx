@@ -4,6 +4,10 @@ const Register = () => {
     const [message, setMessage] = useState('');
 
     const registerButton = () => {
+        let container = document.querySelector('.container');
+        container.style.display = 'none'
+        let registerParagraph = document.querySelector('.register-paragraph');
+        registerParagraph.style.marginBottom = '33%';
         setMessage('Your account has been registered successfully. We will contact you soon for further process!')
     }
 
@@ -36,7 +40,7 @@ const Register = () => {
             <span className="register-span">{message}</span>
 
             <div className="container signin">
-                <p>Already have an account? <a className="sign-in" href="/login">Sign in</a>.</p>
+                <p className="register-paragraph">Already have an account? <a className="sign-in" href="/login">Sign in</a>.</p>
             </div>
         </div>
     );

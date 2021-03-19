@@ -4,6 +4,10 @@ const Contact = () => {
     const [message, setMessage] = useState('');
 
     const sendMessage = () => {
+        let container = document.querySelector('.container');
+        container.style.display = 'none'
+        let contactSpan = document.querySelector('.contact-span');
+        contactSpan.style.marginBottom = '12%';
         setMessage('We got your message. We will contact you shortly!')
     }
 

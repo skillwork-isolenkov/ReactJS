@@ -5,13 +5,17 @@ const Login = () => {
     const [message, setMessage] = useState('');
 
     const loginButton = () => {
-        setMessage('Your have Login Successfully!')
+        let container = document.querySelector('.container');
+        container.style.display = 'none'
+        let forgotPsw = document.querySelector('.forgot-psw');
+        forgotPsw.style.marginBottom = '33%';
+        setMessage('Your have Login Successfully!');
     }
 
     return (
         <div className="login">
             <h2>Login Page</h2>
-            <div className="container">
+            <div className="container" style={{ display: "flex" }}>
                 <label for="username"><b>Username:</b></label>
                 <input type="text" name="username" id="username" required />
 
@@ -24,10 +28,10 @@ const Login = () => {
                 </div>
             </div>
 
-            <span className="register-span">{message}</span>
+            <span className="login-span">{message}</span>
 
             <div className="container signin">
-                <p>Forgot Password? <a className="forgotten-pass" href="/forgottenpsw">Click Here</a>.</p>
+                <p className="forgot-psw">Forgot Password? <a className="forgotten-pass" href="/forgottenpsw">Click Here</a>.</p>
             </div>
         </div>
     );

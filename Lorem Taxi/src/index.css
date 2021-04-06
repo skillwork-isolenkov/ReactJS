@@ -164,7 +164,7 @@ code {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 70vh;
+  height: 94vh;
   border-bottom: 1px solid #3B3A3A;
 }
 .about-taxi{
@@ -204,8 +204,6 @@ code {
 .taxi-logo::before{
   content: "";
   position: absolute;
-  top: 115%;
-  left: 50%;
   width: 450px;
   height: 480px;
   background-color: #3B3A3A;
@@ -222,9 +220,9 @@ code {
   display: flex;
   flex-flow: column wrap;
   width: 100%;
-  height: 50vh;
-  margin-top: 2%;
+  height: 65vh;
   border-bottom: 1px solid #3B3A3A;
+  margin-top: 5%;
 }
 
 .heading-container h2{
@@ -277,8 +275,9 @@ code {
 .news{
   display: flex;
   flex-flow: column wrap;
-  height: 75vh;
+  height: 84vh;
   border-bottom: 1px solid #3B3A3A;
+  margin-top: 5%;
 }
 
 .news-header h2{
@@ -329,10 +328,12 @@ code {
   flex-direction: column;
   height: 70vh;
   border-bottom: 1px solid #3B3A3A;
+  background-image: url(/src/Components/img/client/taxi-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 .client-header h2{
-  color: #3B3A3A;
+  color: white;
   font-size: 2rem;
   margin-left: 16%;
 }

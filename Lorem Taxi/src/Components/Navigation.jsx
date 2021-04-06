@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
+
 const Navigation = () => {
     return (
         <div className="navigation">
             <h3>LoremTaxi</h3>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">News</a></li>
-                <li><a href="/">Contact Us</a></li>
-                <li><a href="/">Login</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/services">Services</Link></li>
+                <li><Link to="/news">News</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
+                <li><Link to="/login">Login</Link></li>
             </ul>
         </div>
     );

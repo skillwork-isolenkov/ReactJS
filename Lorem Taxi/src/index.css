@@ -360,3 +360,63 @@ code {
 }
 
 /* Contact Us */
+.contact{
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  margin-top: 3%;
+}
+
+.contact-heading h2{
+  color: #3B3A3A;
+  font-size: 2rem;
+  margin-left: 13%;
+}
+
+.contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.contact-box{
+  padding: 25px;
+  background-color: #3B3A3A;
+  margin: 0 45px;
+  width: 500px;
+}
+.contact-box h4{
+  color: white;
+  font-size: 24px;
+  margin-top: 0;
+}
+.contact-box input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+.contact-box button{
+  padding: 8px 30px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #F7C621;
+  color: #3B3A3A;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact-box button:hover{
+  cursor: pointer;
+  background-color: white;
+}
+
+#input-msg{
+  height: 75px;
+}

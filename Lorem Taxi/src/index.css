@@ -420,3 +420,35 @@ code {
 #input-msg{
   height: 75px;
 }
+
+/* Download */
+.download{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #F7C621;
+  height: 65vh;
+}
+
+.download-container h2{
+  color: #3B3A3A;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.download-container h4{
+  color: white;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.download-container p{
+  color: white;
+  width: 500px;
+  font-weight: bold;
+}
+
+.icons img{
+  margin-right: 10px;
+}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
     return (
         <div className="navigation">
-            <h3>LoremTaxi</h3>
+            <h3><Link to="/">LoremTaxi</Link></h3>
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>

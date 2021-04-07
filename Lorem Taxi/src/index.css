@@ -165,7 +165,6 @@ code {
   flex-wrap: wrap;
   justify-content: space-evenly;
   height: 94vh;
-  border-bottom: 1px solid #3B3A3A;
 }
 .about-taxi{
   display: flex;
@@ -219,14 +218,15 @@ code {
 .services{
   display: flex;
   flex-flow: column wrap;
-  width: 100%;
-  height: 65vh;
-  border-bottom: 1px solid #3B3A3A;
+  width: 95%;
+  height: 60vh;
   margin-top: 5%;
+  margin: 0 auto;
+  border: 1px solid #e5e5e5;
 }
 
 .heading-container h2{
-  color: #3B3A3A;
+  color: #F7C621;
   font-size: 2rem;
   margin-left: 17%;
 }
@@ -363,6 +363,7 @@ code {
 .contact{
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 70vh;
   margin-top: 3%;
 }
@@ -370,14 +371,15 @@ code {
 .contact-heading h2{
   color: #3B3A3A;
   font-size: 2rem;
-  margin-left: 13%;
+  margin-right: 950px;
+  border-right: 3px solid #F7C621;
+  padding-right: 15px;
 }
 
 .contact-container{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
   margin-top: 5%;
 }
 
@@ -451,4 +453,53 @@ code {
 
 .icons img{
   margin-right: 10px;
+}
+
+/* Choose Us */
+.choose{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.choose-heading h2{
+  color: #3B3A3A;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-right: 625px;
+  border-right: 3px solid #F7C621;
+  padding-right: 15px;
+  margin-bottom: 10%;
+}
+
+.choose-box{
+  display: flex;
+  align-items: center;
+}
+
+.choose-img{
+  min-width: 90px;
+  min-height: 90px;
+  background-color: #3B3A3A;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 45px;
+  margin-bottom: 10px;
+}
+.choose-img:hover{
+  background-color: #F7C621;
+}
+
+.choose-details h5{
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.choose-details p{
+  margin: 0;
+  color: #3B3A3A;
+  width: 700px;
 }

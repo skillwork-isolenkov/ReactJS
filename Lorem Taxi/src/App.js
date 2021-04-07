@@ -1,5 +1,6 @@
 import AppRouter from "./AppRouter";
 import Footer from "./Components/Footer";
+import MyProjects from "./Components/MyProjects/MyProjects";
 import Navigation from "./Components/Navigation";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Navigation />
       <AppRouter />
       <Footer />
+      <MyProjects />
     </div>
   );
 }

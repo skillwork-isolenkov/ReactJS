@@ -23,6 +23,9 @@ code {
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+  background-image: url(./Components/img/hero-bg2.png);
+  background-repeat: no-repeat;
+  background-size: 64.4%;
 }
 .navigation h3{
   margin-left: 35px;
@@ -578,4 +581,23 @@ code {
 .footer-social li{
   display: inline;
   padding: 10px 20px;
+}
+
+/* MyProjects */
+.my-projects{
+  background-color: #F7C621;
+  display: flex;
+  justify-content: center;
+  height: 8vh;
+}
+.my-projects p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.my-projects a{
+  text-decoration: none;
+  color: #3B3A3A;
+}
+.my-projects a:hover{
+  text-decoration: underline;
 }

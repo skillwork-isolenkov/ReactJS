@@ -1,4 +1,5 @@
 import AppRouter from "./AppRouter";
+import Footer from "./Components/Footer";
 import Navigation from "./Components/Navigation";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Navigation />
       <AppRouter />
+      <Footer />
     </div>
   );
 }

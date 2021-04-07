@@ -276,7 +276,6 @@ code {
   display: flex;
   flex-flow: column wrap;
   height: 84vh;
-  border-bottom: 1px solid #3B3A3A;
   margin-top: 5%;
 }
 
@@ -502,4 +501,81 @@ code {
   margin: 0;
   color: #3B3A3A;
   width: 700px;
+}
+
+/* Footer */
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #3B3A3A;
+  height: 45vh;
+  margin-top: 5%;
+}
+
+.footer-container{
+  margin-top: 3%;
+}
+
+.footer-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-form h4{
+  font-size: 25px;
+}
+.footer-form form{
+  display: flex;
+  align-items: center;
+}
+.footer-form input{
+  background-color: white;
+  border: none;
+  outline: none;
+  color: #3B3A3A;
+  height: 40px;
+  padding-left: 15px;
+}
+.footer-form button{
+  border: none;
+  outline: none;
+  background-color: #F7C621;
+  padding: 11.5px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.footer-links{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-links li {
+  display: inline;
+  padding: 10px 20px;
+}
+.footer-links a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.footer-links a:hover{
+  text-decoration: underline;
+  color: #F7C621;
+}
+
+.footer-social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social li{
+  display: inline;
+  padding: 10px 20px;
 }

@@ -463,6 +463,7 @@ code {
   flex-direction: column;
   align-items: center;
   margin-top: 2%;
+  margin-bottom: 5%;
 }
 
 .choose-heading h2{
@@ -515,7 +516,6 @@ code {
   color: white;
   background-color: #3B3A3A;
   height: 45vh;
-  margin-top: 5%;
 }
 
 .footer-container{
@@ -600,4 +600,71 @@ code {
 }
 .my-projects a:hover{
   text-decoration: underline;
+}
+
+/* Login */
+.login{
+  height: 65vh;
+  background-image: url(./Components/img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-form{
+  width: 400px;
+  padding: 25px;
+  background-color:#3B3A3A;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+  top: 25%;
+}
+.login-form h4{
+  margin-top: 0;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.login-form form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-form input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+.login-form p{
+  color: white;
+  font-weight: bold;
+}
+.login-form a{
+  text-decoration: none;
+  color: #F7C621;
+}
+
+.login-input{
+  display: flex;
+}
+.login-input button{
+  min-width: 116px;
+  border: none;
+  outline: none;
+  background-color: #F7C621;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 13px 15px;
+}
+.login-input button:hover{
+  background-color: white;
+  color: #3B3A3A;
 }

@@ -5,6 +5,7 @@ import News from './Components/News/News';
 import Services from './Components/Services/Services';
 import Login from './Components/Login/Login';
 import SinglePage from './Components/SinglePage/SinglePage';
+import Register from './Components/Register/Register';
 
 const AppRouter = () => {
     return (
@@ -16,6 +17,7 @@ const AppRouter = () => {
                 <Route path="/news" component={News} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/login" component={Login} />
+                <Route path="/register" component={Register} />
                 <Redirect to="/home" />
             </Switch>
         </div>

@@ -17,7 +17,7 @@ const Download = () => {
                     <Link to="/"><img src={appleImg} alt="apple-img" /></Link>
                 </div>
             </div>
-            <img src={mobileImg} alt="mobile-img" />
+            <img id="mobileImg" src={mobileImg} alt="mobile-img" />
         </div>
     );
 }

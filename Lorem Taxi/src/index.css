@@ -738,3 +738,74 @@ code {
   background-color: white;
   color: #3B3A3A;
 }
+
+/* Responsive Design */
+
+/* Portrait */
+@media only screen and (max-width: 900px) {
+  /* Navigation */
+  
+
+  /* Home */
+  .box{
+    align-items: center;
+  }
+  .box img{
+    height: 130px;
+    width: 300px;
+  }
+  .home-btn{
+    margin-top: 15px;
+  }
+
+  .get-taxi{
+    width: 330px;
+  }
+
+  /* About */
+  .about-taxi{
+    padding-right: 10px;
+  }
+  .about-taxi p{
+    width: 300px;
+  }
+
+  .about-btn{
+    margin-top: 10px;
+  }
+
+  .taxi-logo::before{
+    height: 160px;
+    width: 200px;
+  }
+  .taxi-logo img{
+    height: 150px;
+    width: 300px;
+  }
+
+  /* Services */
+  .services{
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+  }
+  
+  .box-services{
+    margin-bottom: 30px;
+  }
+
+  /* News */
+  .news{
+    height: 190vh;
+    flex-wrap: nowrap;
+  }
+
+  .news-box img{
+    height: 200px;
+  }
+
+  .details-news{
+    width: 265px;
+    font-size: 13px;
+  }
+}

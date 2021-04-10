@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -26,6 +27,7 @@ code {
   background-image: url(./Components/img/hero-bg2.png);
   background-repeat: no-repeat;
   background-size: 64.4%;
+  height: 5vh;
 }
 .navigation h3{
   margin-left: 35px;
@@ -190,6 +192,7 @@ code {
   width: 550px;
   color: #3B3A3A;
   font-size: 17px;
+  margin-bottom: 5px;
 }
 
 .about-btn{
@@ -260,6 +263,7 @@ code {
   margin-top: 0;
   font-size: 17px;
   color: #3B3A3A;
+  margin-bottom: 5px;
 }
 
 .services-box button{
@@ -349,6 +353,7 @@ code {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 15px;
 }
 .client-box{
   width: 500px;
@@ -398,7 +403,7 @@ code {
 .contact-box h4{
   color: white;
   font-size: 24px;
-  margin-top: 0;
+  margin-bottom: 10px;
 }
 .contact-box input{
   width: 100%;
@@ -533,6 +538,7 @@ code {
 }
 .footer-form h4{
   font-size: 25px;
+  margin-bottom: 15px;
 }
 .footer-form form{
   display: flex;
@@ -580,6 +586,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 15px;
 }
 
 .footer-social li{
@@ -592,11 +599,12 @@ code {
   background-color: #F7C621;
   display: flex;
   justify-content: center;
-  height: 8vh;
+  height: 5vh;
 }
 .my-projects p{
   font-size: 20px;
   font-weight: bold;
+  margin-top: 10px;
 }
 .my-projects a{
   text-decoration: none;
@@ -755,6 +763,9 @@ code {
     background-image: none;
     background-color: #F7C621;
   }
+  .navigation h3{
+    margin-top: 20px;
+  }
   .navigation h3:hover{
     color: white;
   }
@@ -834,10 +845,13 @@ code {
 
   /* News */
   .news{
-    height: 190vh;
+    height: 170vh;
     flex-wrap: nowrap;
   }
 
+  .news-box{
+    margin-bottom: 15px;
+  }
   .news-box img{
     height: 200px;
   }
@@ -849,7 +863,7 @@ code {
 
   /* Client */
   .client{
-    height: 120vh;
+    height: 100vh;
   }
 
   .client-box{

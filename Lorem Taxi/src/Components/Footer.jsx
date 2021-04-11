@@ -4,19 +4,38 @@ import facebook from './img/footer/fb.png'
 import instagram from './img/footer/instagram.png'
 import linkedin from './img/footer/linkedin.png'
 import twitter from './img/footer/twitter.png'
-
+import { useState } from 'react'
 const { Link } = require("react-router-dom")
 
 const Footer = () => {
+    const [message, setMessage] = useState('');
+
+    const footerBtn = (e) => {
+        e.preventDefault();
+        let email = document.querySelector('#email-input');
+
+        let footerMsg = document.querySelector('#footer-msg');
+
+        if (email.value !== '') {
+            setMessage('Congratulations, you are subscriber now!');
+            footerMsg.style.color = "#08bd08";
+        } else {
+            setMessage('Please fill in required field!');
+            footerMsg.style.color = "red";
+        }
+
+        email.value = '';
+    }
     return (
         <div className="footer">
             <div className="footer-container">
                 <div className="footer-form">
                     <h4>Subscribe Our Newsletter</h4>
                     <form action="/">
-                        <input type="text" placeholder="Enter your email" />
-                        <button><FontAwesomeIcon icon={faArrowRight} /></button>
+                        <input type="text" placeholder="Enter your email" id="email-input" />
+                        <button onClick={footerBtn}><FontAwesomeIcon icon={faArrowRight} /></button>
                     </form>
+                    <span id="footer-msg">{message}</span>
                 </div>
 
                 <div className="footer-links">

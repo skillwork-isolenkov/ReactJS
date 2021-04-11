@@ -131,7 +131,7 @@ code {
   font-size: 1.5rem;
 }
 .get-taxi form{
-  margin: 15px 0;
+  margin: 5px 0;
 }
 .get-taxi input{
   width: 100%;
@@ -145,6 +145,7 @@ code {
 
 .btn-input{
   display: flex;
+  margin-bottom: 10px;
 }
 .btn-input input{
   width: calc(95% - 116px);
@@ -165,6 +166,11 @@ code {
 .btn-input button:hover{
   background-color: white;
   color: #3B3A3A;
+}
+
+#home-message{
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* About */
@@ -433,6 +439,10 @@ code {
 #input-msg{
   height: 75px;
 }
+#contact-msg{
+  font-size: 20px;
+  font-weight: bold;
+}
 
 /* Download */
 .download{
@@ -594,6 +604,11 @@ code {
   padding: 10px 20px;
 }
 
+#footer-msg{
+  font-size: 20px;
+  font-weight: bold;
+}
+
 /* MyProjects */
 .my-projects{
   background-color: #F7C621;
@@ -681,6 +696,11 @@ code {
   color: #3B3A3A;
 }
 
+#login-msg{
+  font-size: 17px;
+  font-weight: bold;
+}
+
 /* Register */
 .register{
   height: 75vh;
@@ -749,6 +769,11 @@ code {
 .register-input button:hover{
   background-color: white;
   color: #3B3A3A;
+}
+
+#register-msg{
+  font-size: 17px;
+  font-weight: bold;
 }
 
 /* Responsive Design */
@@ -836,7 +861,7 @@ code {
   .services{
     display: flex;
     flex-direction: column;
-    height: 110vh;
+    height: 135vh;
   }
   
   .box-services{
@@ -845,7 +870,7 @@ code {
 
   /* News */
   .news{
-    height: 170vh;
+    height: 200vh;
     flex-wrap: nowrap;
   }
 
@@ -863,7 +888,7 @@ code {
 
   /* Client */
   .client{
-    height: 100vh;
+    height: 110vh;
   }
 
   .client-box{
@@ -876,7 +901,7 @@ code {
 
   /* Contact */
   .contact{
-    height: 120vh;
+    height: 130vh;
   }
   .contact-heading{
     width: 300px;
@@ -979,6 +1004,9 @@ code {
   }
 
   /* MyProjects */
+  .my-projects{
+    height: 8vh;
+  }
   .my-projects p{
     font-size: 20px;
   }
